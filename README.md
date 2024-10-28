@@ -1,4 +1,4 @@
-# MERCADO FOOD 🍽️
+# APP MERCADO 🍽️
 
 ## Descrição 📜
 
