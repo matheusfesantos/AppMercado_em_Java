@@ -85,7 +85,3 @@ Contribuições são sempre bem-vindas! Sinta-se à vontade para enviar pull req
 ## **Licença** 📜  
 
 Este projeto é para fins educacionais e está sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.  
-
----
-
-Se desejar mais alterações ou melhorias, é só pedir! 😊
