@@ -61,8 +61,6 @@ O objetivo do projeto é aprender sobre Java e suas bibliotecas, aprofundar-se a
 
 ---
 
-Se precisar de mais alguma edição ou adicionar algo, é só falar! 😊
-
 ## **Como Executar o Projeto** ▶️  
 
 1. Certifique-se de ter o **Java 11+** instalado no seu sistema.  
