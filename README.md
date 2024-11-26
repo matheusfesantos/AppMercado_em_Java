@@ -1,7 +1,3 @@
-Aqui está o README atualizado com a **Estrutura do Projeto** adicionada:
-
----
-
 # **APP MERCADO FOOD** 🍽️  
 
 ## **Descrição** 📜  
