@@ -1,3 +1,5 @@
+package src.java.telas;
+
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -23,7 +25,7 @@ public class Carrinho extends Application {
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("NOTA FISCAL");
-        primaryStage.getIcons().add(new Image("file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Logos/JanelaLogo.png"));
+        primaryStage.getIcons().add(new Image("file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/Logos/JanelaLogo.png"));
 
 
         BorderPane root = new BorderPane();

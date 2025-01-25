@@ -1,3 +1,5 @@
+package src.java;
+
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -11,8 +13,9 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import src.java.telas.Perfil;
+import src.java.telas.Produtos;
 
-import javax.swing.*;
 import java.util.Objects;
 
 public class TelaPrincipal extends Application {
@@ -21,11 +24,9 @@ public class TelaPrincipal extends Application {
     private String cpf;
     private String endereco;
 
+    public TelaPrincipal() {}
 
-    public TelaPrincipal(String nomeUsuario) {
-        this.nomeUsuario = nomeUsuario;
-    }
-    public TelaPrincipal(String nomeUsuarioCdastro, String cpf, String endereco) {
+    public TelaPrincipal(String nomeUsuarioCdastro) {
         this.nomeUsuario = nomeUsuarioCdastro;
         this.cpf = cpf;
         this.endereco = endereco;
@@ -34,10 +35,10 @@ public class TelaPrincipal extends Application {
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("MERCADO");
-        primaryStage.getIcons().add(new Image("file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Logos/JanelaLogo.png"));
+        primaryStage.getIcons().add(new Image("file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/Logos/JanelaLogo.png"));
 
         BorderPane TelaPrincipal = new BorderPane();
-        Image backgroundImage = new Image("file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/PlanosDeFundo/Wallpaper_TelaLogin.jpg");
+        Image backgroundImage = new Image("file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/PlanosDeFundo/Wallpaper_TelaLogin.jpg");
         ImageView backgroundView = new ImageView(backgroundImage);
         backgroundView.setFitWidth(800);
         backgroundView.setFitHeight(500);

@@ -1,0 +1,15 @@
+PRODUTO || PREÇO || IMAGEM || QUANTIDADE
+
+Arroz;7.19;src/resources/Imagens/Produtos/Arroz.png;240
+
+Bananas;3.49;src/resources/Imagens/Produtos/Bananas.png;180
+
+Bolo;15.90;src/resources/Imagens/Produtos/Bolo.png;50
+
+Carne;29.99;src/resources/Imagens/Produtos/Carne.png;100
+
+Feijão;5.49;src/resources/Imagens/Produtos/Feijao.png;200
+
+Leite;4.29;src/resources/Imagens/Produtos/Leite.png;300
+
+Maçãs;6.79;src/resources/Imagens/Produtos/Maças.png;150

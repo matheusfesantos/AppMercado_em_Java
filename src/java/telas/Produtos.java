@@ -1,3 +1,5 @@
+package src.java.telas;
+
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -10,6 +12,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import src.java.TelaPrincipal;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,10 +33,10 @@ public class Produtos extends Application {
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Área de Compras");
-        primaryStage.getIcons().add(new Image("file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Logos/JanelaLogo.png"));
+        primaryStage.getIcons().add(new Image("file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/Logos/JanelaLogo.png"));
 
         BorderPane root = new BorderPane();
-        Image backgroundImage = new Image("file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/PlanosDeFundo/Wallpaper_TelaLogin.jpg");
+        Image backgroundImage = new Image("file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/PlanosDeFundo/Wallpaper_TelaLogin.jpg");
         ImageView backgroundView = new ImageView(backgroundImage);
         backgroundView.setFitWidth(800);
         backgroundView.setFitHeight(500);
@@ -81,52 +84,52 @@ public class Produtos extends Application {
         gridPane.setPadding(new Insets(10));
 
         CheckBox bananaCheckBox = new CheckBox();
-        adicionarProduto(gridPane, "Banana", "R$ 2,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Produtos/Bananas.png", bananaCheckBox, 0, 0);
+        adicionarProduto(gridPane, "Banana", "R$ 2,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/src.java.telas.Produtos/Bananas.png", bananaCheckBox, 0, 0);
 
         CheckBox macaCheckBox = new CheckBox();
-        adicionarProduto(gridPane, "Maçã", "R$ 2,50", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Produtos/Maças.png", macaCheckBox, 1, 0);
+        adicionarProduto(gridPane, "Maçã", "R$ 2,50", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/src.java.telas.Produtos/Maças.png", macaCheckBox, 1, 0);
 
         CheckBox leiteCheckBox = new CheckBox();
-        adicionarProduto(gridPane, "Leite", "R$ 6,50", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Produtos/Leite.png", leiteCheckBox, 2, 0);
+        adicionarProduto(gridPane, "Leite", "R$ 6,50", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/src.java.telas.Produtos/Leite.png", leiteCheckBox, 2, 0);
 
         CheckBox arrozCheckBox = new CheckBox();
-        adicionarProduto(gridPane, "Arroz", "R$ 5,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Produtos/Arroz.png", arrozCheckBox, 3, 0);
+        adicionarProduto(gridPane, "Arroz", "R$ 5,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/src.java.telas.Produtos/Arroz.png", arrozCheckBox, 3, 0);
 
         CheckBox carneCheckBox = new CheckBox();
-        adicionarProduto(gridPane, "Carne", "R$ 20,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Produtos/Carne.png", carneCheckBox, 0, 1);
+        adicionarProduto(gridPane, "Carne", "R$ 20,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/src.java.telas.Produtos/Carne.png", carneCheckBox, 0, 1);
 
         CheckBox feijaoCheckBox = new CheckBox();
-        adicionarProduto(gridPane, "Feijão", "R$ 8,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Produtos/Feijao.png", feijaoCheckBox, 1, 1);
+        adicionarProduto(gridPane, "Feijão", "R$ 8,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/src.java.telas.Produtos/Feijao.png", feijaoCheckBox, 1, 1);
 
         CheckBox batataCheckBox = new CheckBox();
-        adicionarProduto(gridPane, "Batata", "R$ 3,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Produtos/Batata.png", batataCheckBox, 2, 1);
+        adicionarProduto(gridPane, "Batata", "R$ 3,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/src.java.telas.Produtos/Batata.png", batataCheckBox, 2, 1);
 
         CheckBox cenouraCheckBox = new CheckBox();
-        adicionarProduto(gridPane, "Cenoura", "R$ 4,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Produtos/Cenoura.png", cenouraCheckBox, 3, 1);
+        adicionarProduto(gridPane, "Cenoura", "R$ 4,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/src.java.telas.Produtos/Cenoura.png", cenouraCheckBox, 3, 1);
 
         CheckBox tomateCheckBox = new CheckBox();
-        adicionarProduto(gridPane, "Tomate", "R$ 3,50", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Produtos/Tomate.png", tomateCheckBox, 0, 2);
+        adicionarProduto(gridPane, "Tomate", "R$ 3,50", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/src.java.telas.Produtos/Tomate.png", tomateCheckBox, 0, 2);
 
         CheckBox queijoCheckBox = new CheckBox();
-        adicionarProduto(gridPane, "Queijo", "R$ 15,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Produtos/Queijo.png", queijoCheckBox, 1, 2);
+        adicionarProduto(gridPane, "Queijo", "R$ 15,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/src.java.telas.Produtos/Queijo.png", queijoCheckBox, 1, 2);
 
         CheckBox ovosCheckBox = new CheckBox();
-        adicionarProduto(gridPane, "Ovos", "R$ 10,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Produtos/Ovos.png", ovosCheckBox, 2, 2);
+        adicionarProduto(gridPane, "Ovos", "R$ 10,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/src.java.telas.Produtos/Ovos.png", ovosCheckBox, 2, 2);
 
         CheckBox paoCheckBox = new CheckBox();
-        adicionarProduto(gridPane, "Pão", "R$ 4,50", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Produtos/Pao.png", paoCheckBox, 3, 2);
+        adicionarProduto(gridPane, "Pão", "R$ 4,50", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/src.java.telas.Produtos/Pao.png", paoCheckBox, 3, 2);
 
         CheckBox macarraoCheckBox = new CheckBox();
-        adicionarProduto(gridPane, "Macarrão", "R$ 7,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Produtos/Macarrao.png", macarraoCheckBox, 0, 3);
+        adicionarProduto(gridPane, "Macarrão", "R$ 7,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/src.java.telas.Produtos/Macarrao.png", macarraoCheckBox, 0, 3);
 
         CheckBox saladaCheckBox = new CheckBox();
-        adicionarProduto(gridPane, "Salada", "R$ 9,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Produtos/Salada.png", saladaCheckBox, 1, 3);
+        adicionarProduto(gridPane, "Salada", "R$ 9,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/src.java.telas.Produtos/Salada.png", saladaCheckBox, 1, 3);
 
         CheckBox sucoCheckBox = new CheckBox();
-        adicionarProduto(gridPane, "Suco", "R$ 5,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Produtos/Suco.png", sucoCheckBox, 2, 3);
+        adicionarProduto(gridPane, "Suco", "R$ 5,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/src.java.telas.Produtos/Suco.png", sucoCheckBox, 2, 3);
 
         CheckBox boloCheckBox = new CheckBox();
-        adicionarProduto(gridPane, "Bolo", "R$ 12,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Produtos/Bolo.png", boloCheckBox, 3, 3);
+        adicionarProduto(gridPane, "Bolo", "R$ 12,00", "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/src.java.telas.Produtos/Bolo.png", boloCheckBox, 3, 3);
 
 
         ScrollPane scrollPane = new ScrollPane(gridPane);

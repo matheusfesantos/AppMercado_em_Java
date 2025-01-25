@@ -1,3 +1,5 @@
+package src.java.telas;
+
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -8,8 +10,8 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import src.java.TelaPrincipal;
 
 public class Entrega extends Application {
     private String nomeUsuario;
@@ -21,7 +23,7 @@ public class Entrega extends Application {
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("MERCADO");
-        primaryStage.getIcons().add(new Image("file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Logos/JanelaLogo.png"));
+        primaryStage.getIcons().add(new Image("file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/Logos/JanelaLogo.png"));
 
         BorderPane root = new BorderPane();
 
@@ -35,7 +37,7 @@ public class Entrega extends Application {
         rodapeSuperior.getChildren().add(mensagemLabel);
 
         ImageView imagemEntrega = new ImageView(new Image(
-                "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Entregador/MotoEntregador.png"));
+                "file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/Entregador/MotoEntregador.png"));
         imagemEntrega.setFitWidth(300);
         imagemEntrega.setFitHeight(300);
         imagemEntrega.setPreserveRatio(true);

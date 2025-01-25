@@ -44,13 +44,13 @@ O objetivo do projeto é aprender sobre Java e suas bibliotecas, aprofundar-se a
 │   ├── PlanosDeFundo/      # Fundos usados nas telas do projeto
 │   │   ├── FundoDeCadastro.png
 │   │   └── Wallpaper_TelaLogin.jpg
-│   └── src.java.telas.Produtos/           # src.resources.Imagens de produtos
+│   └── src.java.Produtos/           # src.resources.Imagens de produtos
 │       └── Profile.png
-├── src.java.telas.Cadastro.java           # Classe para cadastro de usuários
-├── src.java.telas.Carrinho.java           # Classe para gerenciar o carrinho de compras
-├── src.java.telas.Entrega.java            # Classe responsável pela entrega
-├── src.java.telas.Perfil.java             # Classe para exibir o perfil do usuário
-├── src.java.telas.Produtos.java           # Classe para gerenciar produtos
+├── src.java.Cadastro.java           # Classe para cadastro de usuários
+├── src.java.Carrinho.java           # Classe para gerenciar o carrinho de compras
+├── src.java.Entrega.java            # Classe responsável pela entrega
+├── src.java.Perfil.java             # Classe para exibir o perfil do usuário
+├── src.java.Produtos.java           # Classe para gerenciar produtos
 ├── src.java.TelaLogin.java          # Classe para a tela de login
 └── src.java.TelaPrincipal.java      # Classe para a tela principal
 ```  

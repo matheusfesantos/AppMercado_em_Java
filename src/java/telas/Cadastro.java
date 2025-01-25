@@ -1,3 +1,5 @@
+package src.java.telas;
+
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -13,6 +15,8 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import src.java.TelaLogin;
+import src.java.TelaPrincipal;
 
 public class Cadastro extends Application {
 
@@ -21,7 +25,7 @@ public class Cadastro extends Application {
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("MERCADO");
-        primaryStage.getIcons().add(new Image("file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Logos/JanelaLogo.png"));
+        primaryStage.getIcons().add(new Image("file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/Logos/JanelaLogo.png"));
 
         BorderPane root = new BorderPane();
 
@@ -52,7 +56,7 @@ public class Cadastro extends Application {
         rodapeSuperior.getChildren().addAll(voltarlButton);
         root.setTop(rodapeSuperior);
 
-        ImageView fotoPerfil = new ImageView(new Image("file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Profile.png"));
+        ImageView fotoPerfil = new ImageView(new Image("file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/Profile.png"));
         fotoPerfil.setFitHeight(150);
         fotoPerfil.setFitWidth(150);
         fotoPerfil.setStyle("-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 5, 0, 2, 2);");
@@ -111,7 +115,7 @@ public class Cadastro extends Application {
             }
 
             Stage telaPrincipalStage = new Stage();
-            TelaPrincipal telaPrincipal = new TelaPrincipal(nome, cpf, endereco);
+            TelaPrincipal telaPrincipal = new TelaPrincipal(nome);
             telaPrincipal.start(telaPrincipalStage);
             primaryStage.close();
         });

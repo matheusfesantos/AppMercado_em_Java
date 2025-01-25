@@ -1,3 +1,5 @@
+package src.java.telas;
+
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -12,6 +14,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import src.java.TelaPrincipal;
 
 public class Perfil extends Application {
     private String nomeUsuario;
@@ -27,10 +30,10 @@ public class Perfil extends Application {
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("MERCADO");
-        primaryStage.getIcons().add(new Image("file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Logos/JanelaLogo.png"));
+        primaryStage.getIcons().add(new Image("file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/Logos/JanelaLogo.png"));
 
         BorderPane root = new BorderPane();
-        Image backgroundImage = new Image("file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/PlanosDeFundo/FundoDeCadastro.png");
+        Image backgroundImage = new Image("file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/PlanosDeFundo/FundoDeCadastro.png");
         ImageView backgroundView = new ImageView(backgroundImage);
         backgroundView.setFitWidth(800);
         backgroundView.setFitHeight(500);
@@ -64,7 +67,7 @@ public class Perfil extends Application {
         rodapeSuperior.getChildren().addAll(voltarlButton);
         root.setTop(rodapeSuperior);
 
-        ImageView fotoPerfil = new ImageView(new Image("file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/Imagens/Profile.png"));
+        ImageView fotoPerfil = new ImageView(new Image("file:C:/Users/matheus.fgs/Desktop/Tela de Login com Interface/src.resources.Imagens/Profile.png"));
         fotoPerfil.setFitHeight(150);
         fotoPerfil.setFitWidth(150);
         fotoPerfil.setStyle("-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 5, 0, 2, 2);");
@@ -72,7 +75,7 @@ public class Perfil extends Application {
         TextField nomeField = new TextField(nomeUsuario);
         TextField enderecoField = new TextField(endereco);
         TextField cpfField = new TextField(cpf);
-        TextField telefoneField = new TextField()
+        TextField telefoneField = new TextField();
 
         String textFieldStyle = "-fx-background-color: white; -fx-text-fill: #2F4F4F; " +
                 "-fx-font-size: 14px; -fx-padding: 10; -fx-background-radius: 10; " +
